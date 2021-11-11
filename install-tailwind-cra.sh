@@ -1,2 +1,7 @@
 #!/bin/bash
+read -p "Name your project: " project
+
+npx create-react-app project
+cd project
 npm install -D tailwindcss@npm:@tailwindcss/postcss7-compat postcss@\^7 autoprefixer@\^9
+npm install @craco/craco
