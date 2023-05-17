@@ -9,6 +9,13 @@
 # - %m: (full) machine hostname
 # - %(n)d: Current directory, n: number of components
 
+# LLVM
+export PATH="/usr/local/opt/llvm/bin/clang-format:$PATH"
+export PATH="/usr/local/opt/llvm/bin/clang-tidy:$PATH"
+export LDFLAGS="-L/usr/local/opt/llvm/lib"
+export CPPFLAGS="-I/usr/local/opt/llvm/include"
+
+# Node Version Manager
 export NVM_DIR="$HOME/.nvm"
   [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
   [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
@@ -43,6 +50,9 @@ export WASMER_DIR="/Users/personal/.wasmer"
 [ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
 alias python="python3"
 export PATH="/usr/local/sbin:$PATH"
+
+# MySQL
+export PATH=/usr/local/mysql/bin:$PATH
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
