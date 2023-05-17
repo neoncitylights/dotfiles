@@ -1,39 +1,44 @@
 [v1]
 "cargo-bloat 0.11.1 (registry+https://github.com/rust-lang/crates.io-index)" = ["cargo-bloat"]
+"cargo-cache 0.8.3 (registry+https://github.com/rust-lang/crates.io-index)" = ["cargo-cache"]
 "cargo-deadlinks 0.8.1 (registry+https://github.com/rust-lang/crates.io-index)" = [
     "cargo-deadlinks",
     "deadlinks",
 ]
-"cargo-deny 0.12.2 (registry+https://github.com/rust-lang/crates.io-index)" = ["cargo-deny"]
-"cargo-expand 1.0.32 (registry+https://github.com/rust-lang/crates.io-index)" = ["cargo-expand"]
-"cargo-fuzz 0.11.0 (registry+https://github.com/rust-lang/crates.io-index)" = ["cargo-fuzz"]
+"cargo-deny 0.13.9 (registry+https://github.com/rust-lang/crates.io-index)" = ["cargo-deny"]
+"cargo-expand 1.0.49 (registry+https://github.com/rust-lang/crates.io-index)" = ["cargo-expand"]
+"cargo-fuzz 0.11.2 (registry+https://github.com/rust-lang/crates.io-index)" = ["cargo-fuzz"]
 "cargo-insta 1.29.0 (registry+https://github.com/rust-lang/crates.io-index)" = ["cargo-insta"]
-"cargo-llvm-cov 0.5.3 (registry+https://github.com/rust-lang/crates.io-index)" = ["cargo-llvm-cov"]
-"cargo-outdated 0.11.1 (registry+https://github.com/rust-lang/crates.io-index)" = ["cargo-outdated"]
-"cargo-quickinstall 0.2.6 (registry+https://github.com/rust-lang/crates.io-index)" = ["cargo-quickinstall"]
+"cargo-llvm-cov 0.5.19 (registry+https://github.com/rust-lang/crates.io-index)" = ["cargo-llvm-cov"]
+"cargo-outdated 0.11.2 (registry+https://github.com/rust-lang/crates.io-index)" = ["cargo-outdated"]
+"cargo-quickinstall 0.2.9 (registry+https://github.com/rust-lang/crates.io-index)" = ["cargo-quickinstall"]
 "cargo-release 0.24.10 (registry+https://github.com/rust-lang/crates.io-index)" = ["cargo-release"]
-"cargo-tarpaulin 0.20.1 (registry+https://github.com/rust-lang/crates.io-index)" = ["cargo-tarpaulin"]
-"cargo-watch 8.1.1 (registry+https://github.com/rust-lang/crates.io-index)" = ["cargo-watch"]
-"cargo-workspaces 0.2.35 (registry+https://github.com/rust-lang/crates.io-index)" = [
+"cargo-tarpaulin 0.25.2 (registry+https://github.com/rust-lang/crates.io-index)" = ["cargo-tarpaulin"]
+"cargo-update 13.0.2 (registry+https://github.com/rust-lang/crates.io-index)" = [
+    "cargo-install-update",
+    "cargo-install-update-config",
+]
+"cargo-watch 8.4.0 (registry+https://github.com/rust-lang/crates.io-index)" = ["cargo-watch"]
+"cargo-workspaces 0.2.41 (registry+https://github.com/rust-lang/crates.io-index)" = [
     "cargo-workspaces",
     "cargo-ws",
 ]
-"flamegraph 0.6.1 (registry+https://github.com/rust-lang/crates.io-index)" = [
+"flamegraph 0.6.3 (registry+https://github.com/rust-lang/crates.io-index)" = [
     "cargo-flamegraph",
     "flamegraph",
 ]
-"https 1.12.5 (registry+https://github.com/rust-lang/crates.io-index)" = [
+"https 1.12.6 (registry+https://github.com/rust-lang/crates.io-index)" = [
     "http",
     "httplz",
 ]
-"mdbook 0.4.15 (registry+https://github.com/rust-lang/crates.io-index)" = ["mdbook"]
+"mdbook 0.4.29 (registry+https://github.com/rust-lang/crates.io-index)" = ["mdbook"]
 "mdbook-katex 0.2.10 (git+https://github.com/lzanini/mdbook-katex#6caedb565f8a8e4ed9bb993cc15472dc5f04e765)" = ["mdbook-katex"]
 "mdbook-linkcheck 0.7.7 (registry+https://github.com/rust-lang/crates.io-index)" = ["mdbook-linkcheck"]
-"tauri-cli 1.0.4 (registry+https://github.com/rust-lang/crates.io-index)" = ["cargo-tauri"]
+"tauri-cli 1.3.1 (registry+https://github.com/rust-lang/crates.io-index)" = ["cargo-tauri"]
 "trunk 0.16.0 (registry+https://github.com/rust-lang/crates.io-index)" = ["trunk"]
 "twiggy 0.7.0 (registry+https://github.com/rust-lang/crates.io-index)" = ["twiggy"]
 "typos-cli 1.14.9 (registry+https://github.com/rust-lang/crates.io-index)" = ["typos"]
-"wasm-bindgen-cli 0.2.79 (registry+https://github.com/rust-lang/crates.io-index)" = [
+"wasm-bindgen-cli 0.2.86 (registry+https://github.com/rust-lang/crates.io-index)" = [
     "wasm-bindgen",
     "wasm-bindgen-test-runner",
     "wasm2es6js",
