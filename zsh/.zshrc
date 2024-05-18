@@ -272,6 +272,7 @@ ghce() {
 # https://github.com/nvbn/thefuck
 eval $(thefuck --alias)
 
+# wasmtime
+# https://docs.wasmtime.dev/cli.html
 export WASMTIME_HOME="$HOME/.wasmtime"
-
 export PATH="$WASMTIME_HOME/bin:$PATH"
