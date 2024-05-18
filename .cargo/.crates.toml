@@ -37,4 +37,5 @@
     "gix",
 ]
 "mdbook 0.4.40 (registry+https://github.com/rust-lang/crates.io-index)" = ["mdbook"]
+"procs 0.14.5 (registry+https://github.com/rust-lang/crates.io-index)" = ["procs"]
 "ripgrep 14.1.0 (registry+https://github.com/rust-lang/crates.io-index)" = ["rg"]
