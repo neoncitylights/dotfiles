@@ -124,7 +124,6 @@ eval $(thefuck --alias)
 # https://docs.wasmtime.dev/cli.html
 export WASMTIME_HOME="$HOME/.wasmtime"
 export PATH="$WASMTIME_HOME/bin:$PATH"
-export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 
 # Running Brew with Apple Silicon chip
 alias brew="arch -arm64 brew $@"
