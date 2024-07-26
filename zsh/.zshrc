@@ -100,8 +100,13 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+eval "$(zoxide init zsh)"
+
 # Hide device name
 export DEFAULT_USER=$USER
+
+# Local binaries
+export PATH="$PATH:$HOME/.local/bin"
 
 # Bun
 export BUN_INSTALL="$HOME/.bun"
@@ -111,16 +116,21 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export DENO_INSTALL="/Users/personal/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 
+# thefuck
+# https://github.com/nvbn/thefuck
+eval $(thefuck --alias)
+
+# wasmtime
+# https://docs.wasmtime.dev/cli.html
+export WASMTIME_HOME="$HOME/.wasmtime"
+export PATH="$WASMTIME_HOME/bin:$PATH"
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+
 # Running Brew with Apple Silicon chip
-function armbrew() {
-    arch -arm64 brew $@
-}
-
-function ezalg() {
-    eza -l --git --group-directories-first -all $@
-}
-
-export PATH="$PATH:$HOME/.local/bin"
+alias brew="arch -arm64 brew $@"
+# Run Eza instead of default "ls" tool
+alias ls="eza -F --group-directories-first $@"
+alias lsl="eza -F -l --group-directories-first --git --git-repos --no-permissions -h -all $@"
 
 # https://github.com/nvm-sh/nvm
 # https://formulae.brew.sh/formula/nvm
@@ -132,9 +142,7 @@ export NVM_DIR="$HOME/.nvm"
 # bun completions
 [ -s "/Users/personal/.bun/_bun" ] && source "/Users/personal/.bun/_bun"
 
-eval "$(zoxide init zsh)"
-export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
-
+# "ghcs": GitHub Copilot suggests
 ghcs() {
 	FUNCNAME="$funcstack[1]"
 	TARGET="shell"
@@ -216,6 +224,7 @@ ghcs() {
 	fi
 }
 
+# "ghce": GitHub Copilot explains
 ghce() {
 	FUNCNAME="$funcstack[1]"
 	local GH_DEBUG="$GH_DEBUG"
@@ -267,12 +276,3 @@ ghce() {
 
 	GH_DEBUG="$GH_DEBUG" gh copilot explain "$@"
 }
-
-# thefuck
-# https://github.com/nvbn/thefuck
-eval $(thefuck --alias)
-
-# wasmtime
-# https://docs.wasmtime.dev/cli.html
-export WASMTIME_HOME="$HOME/.wasmtime"
-export PATH="$WASMTIME_HOME/bin:$PATH"

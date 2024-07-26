@@ -9,8 +9,12 @@
 {
 	"theme": {
 		"mode": "system",
-		"light": "Github Light",
-		"dark": "Github Dark"
+		"light": "Catppuccin Latte",
+		"dark": "Catppuccin Mocha"
+	},
+	"features": {
+		"copilot": false,
+		"inline_completion_provider": "none"
 	},
 	"ui_font_family": "SF Mono",
 	"ui_font_size": 14,
@@ -20,16 +24,24 @@
 	"show_whitespaces": "all",
 	"prettier": {
 		"trailingComma": "es5",
-		"tabWidth": 8,
+		"tabWidth": 4,
 		"useTabs": true,
 		"semi": false,
 		"singleQuote": true
 	},
+	"project_panel": {
+		"indent_size": 12
+	},
 	"hard_tabs": true,
+	"tab_bar": {
+		"show_nav_history_buttons": false
+	},
 	"tabs": {
 		"close_position": "right",
 		"git_status": true
 	},
+	"tab_size": 4,
+	"format_on_save": "off",
 	"language_overrides": {
 		"YAML": {
 			"format_on_save": "off",
@@ -39,6 +51,15 @@
 		"TOML": {
 			"format_on_save": "off"
 		}
+	},
+	"file_types": {
+		"JSONC": [
+			"tsconfig.json",
+			"tsconfig.*.json",
+			"jsconfig.json",
+			"jsconfig.*.json",
+			"devcontainer.json"
+		]
 	},
 	"inlay_hints": {
 		"enabled": true,
