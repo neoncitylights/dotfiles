@@ -42,7 +42,7 @@
 	},
 	"tab_size": 4,
 	"format_on_save": "off",
-	"language_overrides": {
+	"languages": {
 		"YAML": {
 			"format_on_save": "off",
 			"tab_size": 2,
@@ -50,6 +50,9 @@
 		},
 		"TOML": {
 			"format_on_save": "off"
+		},
+		"Markdown": {
+			"soft_wrap": "preferred_line_length"
 		}
 	},
 	"file_types": {

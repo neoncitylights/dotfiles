@@ -131,6 +131,12 @@ alias brew="arch -arm64 brew $@"
 alias ls="eza -F --group-directories-first $@"
 alias lsl="eza -F -l --group-directories-first --git --git-repos --no-permissions -h -all $@"
 
+function updatetools() {
+	brew upgrade
+	rustup update
+	nvm install node && nvm use node
+}
+
 # https://github.com/nvm-sh/nvm
 # https://formulae.brew.sh/formula/nvm
 export NVM_DIR="$HOME/.nvm"
