@@ -7,21 +7,26 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+	"icon_theme": "Material Icon Theme",
 	"theme": {
-		"mode": "system",
-		"light": "Catppuccin Latte",
-		"dark": "Catppuccin Mocha"
+		"mode": "dark",
+		"light": "Github Light Tritanopia",
+		"dark": "Github Dark Tritanopia"
 	},
-	"features": {
-		"copilot": false,
-		"inline_completion_provider": "none"
-	},
+	// editor buffer
+	"auto_signature_help": true,
+	"show_whitespaces": "all",
+	"preferred_line_length": 120,
+	// editor buffer (appearance)
 	"ui_font_family": "SF Mono",
 	"ui_font_size": 14,
 	"buffer_font_family": "SF Mono",
-	"buffer_font_size": 12,
-	"preferred_line_length": 100,
-	"show_whitespaces": "all",
+	"buffer_font_size": 13.0,
+	// text formatting (and language-specific)
+	"hard_tabs": true,
+	"tab_size": 4,
+	"format_on_save": "on",
+	"formatter": "language_server",
 	"prettier": {
 		"trailingComma": "es5",
 		"tabWidth": 4,
@@ -29,30 +34,49 @@
 		"semi": false,
 		"singleQuote": true
 	},
-	"project_panel": {
-		"indent_size": 12
-	},
-	"hard_tabs": true,
-	"tab_bar": {
-		"show_nav_history_buttons": false
-	},
-	"tabs": {
-		"close_position": "right",
-		"git_status": true
-	},
-	"tab_size": 4,
-	"format_on_save": "off",
 	"languages": {
+		"Rust": {
+			"tab_size": 4
+		},
 		"YAML": {
 			"format_on_save": "off",
 			"tab_size": 2,
 			"hard_tabs": false
 		},
-		"TOML": {
-			"format_on_save": "off"
-		},
 		"Markdown": {
 			"soft_wrap": "preferred_line_length"
+		},
+		"PHP": {
+			"language_servers": [
+				"intelephense",
+				"!phpactor"
+			],
+			"formatter": {
+				"external": {
+					"command": "vendor/bin/phpcbf",
+					"arguments": [
+						"{buffer_path}",
+						"-"
+					]
+				}
+			}
+		}
+	},
+	"lsp": {
+		"rust-analyzer": {
+			"initialization_options": {
+				"check": {
+					"features": "all"
+				},
+				"cargo": {
+					"features": "all"
+				},
+				"imports": {
+					"granularity": {
+						"group": "module"
+					}
+				}
+			}
 		}
 	},
 	"file_types": {
@@ -64,8 +88,23 @@
 			"devcontainer.json"
 		]
 	},
+	// user interface
+	"tabs": {
+		"close_position": "right",
+		"git_status": true,
+		"file_icons": true
+	},
+	"tab_bar": {
+		"show_nav_history_buttons": false
+	},
+	"terminal": {
+		"cursor_shape": "bar",
+		"font_family": "SF Mono"
+	},
+	// editor within
 	"inlay_hints": {
-		"enabled": true,
+		"enabled": false,
+		"show_background": true,
 		"show_type_hints": true,
 		"show_parameter_hints": true,
 		"show_other_hints": true,

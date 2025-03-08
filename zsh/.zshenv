@@ -1,4 +1,4 @@
 . "$HOME/.cargo/env"
 
 # bun completions
-[ -s "/Users/personal/.bun/_bun" ] && source "/Users/personal/.bun/_bun"
+[ -s "$HOME/.bun/_bun" ] && source $HOME/.bun/_bun"
