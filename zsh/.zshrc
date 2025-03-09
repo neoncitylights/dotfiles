@@ -133,8 +133,8 @@ alias lsl="eza -F -l --group-directories-first --git --git-repos --no-permission
 
 function updatetools() {
 	brew upgrade
-	rustup update
-	nvm install node && nvm use node
+	nvm use node
+	rustup update	
 	cargo install-update -a
 }
 
