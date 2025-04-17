@@ -1,3 +1,4 @@
+#!/bin/bash
 # in lieu of restarting the shell
 \. "$HOME/.nvm/nvm.sh"
 
