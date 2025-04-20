@@ -111,10 +111,22 @@ export PATH="$PATH:$HOME/.local/bin"
 # Bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
 # Deno
 export DENO_INSTALL="$HOME/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
+
+# nvm (node version manager)
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
+# LLVM tools
+export PATH="$(brew --prefix llvm)/bin:$PATH"
+export LDFLAGS="-L$(brew --prefix llvm)/lib"
+export CPPFLAGS="-I$(brew --prefix llvm)/include"
+export CMAKE_PREFIX_PATH="$(brew --prefix llvm)"
 
 # thefuck
 # https://github.com/nvbn/thefuck
@@ -130,20 +142,11 @@ alias brew="arch -arm64 brew $@"
 # Run Eza instead of default "ls" tool
 alias ls="eza -F --group-directories-first $@"
 alias lsl="eza -F -l --group-directories-first --git --git-repos --no-permissions -h -all $@"
+alias ghost="ghostty $@"
 
 function updatetools() {
 	brew upgrade
-	nvm use node
-	rustup update	
+	rustup update
+	nvm install node && nvm use node
 	cargo install-update -a
 }
-
-# https://github.com/nvm-sh/nvm
-# https://formulae.brew.sh/formula/nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# bun completions
-[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
