@@ -1,15 +1,4 @@
 [v1]
-"ast-grep 0.37.0 (registry+https://github.com/rust-lang/crates.io-index)" = [
-	"ast-grep",
-	"sg",
-]
-"bat 0.25.0 (registry+https://github.com/rust-lang/crates.io-index)" = ["bat"]
-"cargo-audit 0.21.2 (registry+https://github.com/rust-lang/crates.io-index)" = [
-	"cargo-audit",
-]
-"cargo-binstall 1.12.3 (registry+https://github.com/rust-lang/crates.io-index)" = [
-	"cargo-binstall",
-]
 "cargo-bloat 0.12.1 (registry+https://github.com/rust-lang/crates.io-index)" = [
 	"cargo-bloat",
 ]
@@ -20,26 +9,35 @@
 "cargo-diet 1.2.7 (registry+https://github.com/rust-lang/crates.io-index)" = [
 	"cargo-diet",
 ]
-"cargo-expand 1.0.106 (registry+https://github.com/rust-lang/crates.io-index)" = [
-	"cargo-expand",
+"cargo-watch 8.5.3 (registry+https://github.com/rust-lang/crates.io-index)" = [
+	"cargo-watch",
 ]
-"cargo-fuzz 0.12.0 (registry+https://github.com/rust-lang/crates.io-index)" = [
-	"cargo-fuzz",
+"cross 0.2.5 (registry+https://github.com/rust-lang/crates.io-index)" = [
+	"cross",
+	"cross-util",
 ]
-"cargo-insta 1.42.2 (registry+https://github.com/rust-lang/crates.io-index)" = [
-	"cargo-insta",
+"hd 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)" = ["hd"]
+"ripgrep 14.1.1 (registry+https://github.com/rust-lang/crates.io-index)" = [
+	"rg",
+]
+"bat 0.25.0 (registry+https://github.com/rust-lang/crates.io-index)" = ["bat"]
+"hyperfine 1.19.0 (registry+https://github.com/rust-lang/crates.io-index)" = [
+	"hyperfine",
+]
+"samply 0.13.1 (registry+https://github.com/rust-lang/crates.io-index)" = [
+	"samply",
+]
+"cargo-audit 0.21.2 (registry+https://github.com/rust-lang/crates.io-index)" = [
+	"cargo-audit",
+]
+"tokei 12.1.2 (registry+https://github.com/rust-lang/crates.io-index)" = [
+	"tokei",
 ]
 "cargo-instruments 0.4.12 (registry+https://github.com/rust-lang/crates.io-index)" = [
 	"cargo-instruments",
 ]
-"cargo-llvm-cov 0.6.16 (registry+https://github.com/rust-lang/crates.io-index)" = [
-	"cargo-llvm-cov",
-]
 "cargo-msrv 0.18.4 (registry+https://github.com/rust-lang/crates.io-index)" = [
 	"cargo-msrv",
-]
-"cargo-nextest 0.9.94 (registry+https://github.com/rust-lang/crates.io-index)" = [
-	"cargo-nextest",
 ]
 "cargo-outdated 0.17.0 (registry+https://github.com/rust-lang/crates.io-index)" = [
 	"cargo-outdated",
@@ -47,69 +45,71 @@
 "cargo-release 0.25.18 (registry+https://github.com/rust-lang/crates.io-index)" = [
 	"cargo-release",
 ]
-"cargo-typify 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)" = [
-	"cargo-typify",
-]
-"cargo-update 16.3.0 (registry+https://github.com/rust-lang/crates.io-index)" = [
-	"cargo-install-update",
-	"cargo-install-update-config",
-]
-"cargo-watch 8.5.3 (registry+https://github.com/rust-lang/crates.io-index)" = [
-	"cargo-watch",
-]
-"cargo-workspaces 0.3.6 (registry+https://github.com/rust-lang/crates.io-index)" = [
-	"cargo-workspaces",
-	"cargo-ws",
-]
-"create-tauri-app 4.5.9 (registry+https://github.com/rust-lang/crates.io-index)" = [
-	"cargo-create-tauri-app",
-]
-"cross 0.2.5 (registry+https://github.com/rust-lang/crates.io-index)" = [
-	"cross",
-	"cross-util",
-]
-"eza 0.21.1 (registry+https://github.com/rust-lang/crates.io-index)" = ["eza"]
-"flamegraph 0.6.7 (registry+https://github.com/rust-lang/crates.io-index)" = [
-	"cargo-flamegraph",
-	"flamegraph",
-]
-"gitoxide 0.42.0 (registry+https://github.com/rust-lang/crates.io-index)" = [
-	"ein",
-	"gix",
-]
-"hd 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)" = ["hd"]
-"hyperfine 1.19.0 (registry+https://github.com/rust-lang/crates.io-index)" = [
-	"hyperfine",
-]
-"just 1.40.0 (registry+https://github.com/rust-lang/crates.io-index)" = ["just"]
-"lla 0.3.10 (registry+https://github.com/rust-lang/crates.io-index)" = ["lla"]
-"mdbook 0.4.48 (registry+https://github.com/rust-lang/crates.io-index)" = [
-	"mdbook",
-]
 "procs 0.14.10 (registry+https://github.com/rust-lang/crates.io-index)" = [
 	"procs",
 ]
-"ripgrep 14.1.1 (registry+https://github.com/rust-lang/crates.io-index)" = [
-	"rg",
+"cargo-insta 1.43.1 (registry+https://github.com/rust-lang/crates.io-index)" = [
+	"cargo-insta",
 ]
-"samply 0.13.1 (registry+https://github.com/rust-lang/crates.io-index)" = [
-	"samply",
+"cargo-fuzz 0.13.1 (registry+https://github.com/rust-lang/crates.io-index)" = [
+	"cargo-fuzz",
 ]
-"taplo-cli 0.9.3 (registry+https://github.com/rust-lang/crates.io-index)" = [
+"cargo-workspaces 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)" = [
+	"cargo-workspaces",
+	"cargo-ws",
+]
+"taplo-cli 0.10.0 (registry+https://github.com/rust-lang/crates.io-index)" = [
 	"taplo",
 ]
-"tokei 12.1.2 (registry+https://github.com/rust-lang/crates.io-index)" = [
-	"tokei",
+"zoxide 0.9.8 (registry+https://github.com/rust-lang/crates.io-index)" = [
+	"zoxide",
 ]
-"tree-sitter-cli 0.25.3 (registry+https://github.com/rust-lang/crates.io-index)" = [
+"cargo-expand 1.0.114 (registry+https://github.com/rust-lang/crates.io-index)" = [
+	"cargo-expand",
+]
+"cargo-llvm-cov 0.6.18 (registry+https://github.com/rust-lang/crates.io-index)" = [
+	"cargo-llvm-cov",
+]
+"cargo-update 17.0.0 (registry+https://github.com/rust-lang/crates.io-index)" = [
+	"cargo-install-update",
+	"cargo-install-update-config",
+]
+"create-tauri-app 4.6.2 (registry+https://github.com/rust-lang/crates.io-index)" = [
+	"cargo-create-tauri-app",
+]
+"eza 0.23.0 (registry+https://github.com/rust-lang/crates.io-index)" = ["eza"]
+"gitoxide 0.45.0 (registry+https://github.com/rust-lang/crates.io-index)" = [
+	"ein",
+	"gix",
+]
+"just 1.42.4 (registry+https://github.com/rust-lang/crates.io-index)" = ["just"]
+"mdbook 0.4.52 (registry+https://github.com/rust-lang/crates.io-index)" = [
+	"mdbook",
+]
+"tree-sitter-cli 0.25.8 (registry+https://github.com/rust-lang/crates.io-index)" = [
 	"tree-sitter",
 ]
-"wasm-tools 1.229.0 (registry+https://github.com/rust-lang/crates.io-index)" = [
+"ast-grep 0.39.4 (registry+https://github.com/rust-lang/crates.io-index)" = [
+	"ast-grep",
+	"sg",
+]
+"cargo-binstall 1.15.1 (registry+https://github.com/rust-lang/crates.io-index)" = [
+	"cargo-binstall",
+]
+"cargo-nextest 0.9.103 (registry+https://github.com/rust-lang/crates.io-index)" = [
+	"cargo-nextest",
+]
+"cargo-typify 0.4.3 (registry+https://github.com/rust-lang/crates.io-index)" = [
+	"cargo-typify",
+]
+"flamegraph 0.6.9 (registry+https://github.com/rust-lang/crates.io-index)" = [
+	"cargo-flamegraph",
+	"flamegraph",
+]
+"lla 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)" = ["lla"]
+"wasm-tools 1.237.0 (registry+https://github.com/rust-lang/crates.io-index)" = [
 	"wasm-tools",
 ]
-"zizmor 1.5.2 (registry+https://github.com/rust-lang/crates.io-index)" = [
+"zizmor 1.12.1 (registry+https://github.com/rust-lang/crates.io-index)" = [
 	"zizmor",
-]
-"zoxide 0.9.7 (registry+https://github.com/rust-lang/crates.io-index)" = [
-	"zoxide",
 ]

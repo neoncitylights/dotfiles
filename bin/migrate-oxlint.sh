@@ -1,5 +1,6 @@
 #!/bin/zsh
 
+# note: requires `jq` cli
 # steps:
 # - run oxlint migration tool
 # - unset all dependencies in package.json that contain `eslint`
@@ -14,3 +15,4 @@ npm add -D oxlint
 rm -f eslint.config.js
 npm pkg set scripts.lint="oxlint ."
 npm pkg set scripts.fix="oxlint . --fix"
+npm update

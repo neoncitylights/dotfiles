@@ -5,6 +5,3 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # The original version is saved in .zprofile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/3.12/bin:${PATH}"
 export PATH
-
-# Added by Toolbox App
-export PATH="$PATH:/usr/local/bin"
