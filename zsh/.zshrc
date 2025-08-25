@@ -42,6 +42,12 @@ export LESSHISTFILE=-
 alias brew="arch -arm64 brew $@"
 alias ghost="ghostty $@"
 
+# replace some core commands with custom rust replacements
+# bat: https://github.com/sharkdp/bat
+# lla: https://github.com/chaqchase/lla
+alias cat="bat"
+alias ls="lla"
+
 function updatetools() {
 	brew upgrade
 	rustup update
