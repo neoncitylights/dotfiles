@@ -9,6 +9,9 @@ DISABLE_AUTO_TITLE="true"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
+## activate zsh-syntax-highlighting
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 # Hide device name
 # Local binaries
 export DEFAULT_USER=$USER
@@ -37,7 +40,6 @@ export LESSHISTFILE=-
 
 # Running Brew with Apple Silicon chip
 alias brew="arch -arm64 brew $@"
-alias ls="lla $@"
 alias ghost="ghostty $@"
 
 function updatetools() {
